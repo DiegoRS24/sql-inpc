@@ -1,0 +1,43 @@
+# =============================================================================
+# .gitignore — sql-inpc
+# Archivos que NO deben subirse al repositorio.
+# =============================================================================
+
+# --- Bases de datos generadas ------------------------------------------------
+# inpc.db se regenera corriendo cargar_inpc.ipynb; no se versiona.
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# --- Python ------------------------------------------------------------------
+# Bytecode y cachés que se regeneran solas.
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# --- Jupyter / VS Code -------------------------------------------------------
+# Checkpoints y outputs de celdas que no aportan al repo.
+.ipynb_checkpoints/
+.vscode/
+*.ipynb_checkpoints
+
+# --- Entornos virtuales ------------------------------------------------------
+# Si algún día usas venv o conda, estos directorios no deben subirse.
+.venv/
+venv/
+env/
+.env
+
+# --- Sistema operativo -------------------------------------------------------
+# Basura que generan macOS y Windows.
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# --- Otros -------------------------------------------------------------------
+# Archivos temporales de editores.
+*.swp
+*.swo
+*~
